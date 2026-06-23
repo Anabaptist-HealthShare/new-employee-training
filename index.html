@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Employee Training</title>
-    <link rel="icon" href="ahs_3d logo-781x782.png" type="image/x-icon" />
+    <link rel="icon" href="images/ahs_3d logo-781x782.png" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,56 +20,75 @@
     <main class="container">
       <section class="card">
         <h2>Onboarding</h2>
-        <p>
-          We use Microsoft Outlook, Teams, and Salesforce for our company. 
-        </p>
         <ol>
-            <li>Primarily use Dell Computers</li>
-            <li>Potential place for whatever chatbot?</li>
-            <li>In order to install WSL, you need to follow instructions to install wsl and then install Ubuntu, Quiver, and Nu.</li>
-            <li>WSL-> CD ~ -> cd folder_name to get to the directoryS</li>
+            <li>Set up your Dell Computer and run Dell SupportAssist.</li>
+            <li>Provide access to Salesforce.</li>
+            <li>Create a Microsoft Account and grant access. Setup email and Teams.</li>
+            <li>Create a BitWarden account and Master Password and setup other passwords using this. <em>BitWarden closes every time you leave the tab.</em></li>
+            <li>Add user to groups on Teams & update their calendar to include everyone in AHS.</li>
+            <li>Set up the Teams phone extension using iPilot</li>
+            <li>Figure out the chatbot?</li> 
+            <!-- this chatbot note can be potentially moved to the tech page. -->
+            <li>If you are an IT employee, <a href="tech.html">click here</a> to continue.</li>
         </ol>
       </section>
 
       <section class="card">
-        <h2>Keyboard Shortcuts</h2>
+        <h2>Salesforce Training</h2>
         <ul>
-          <li><strong>CTRL + L</strong>: clear all notes in nu.</li>
-          <li><strong>CTRL + C</strong>: stop or clear any running process.</li>
-          <li><strong>Q</strong>: quit when running quiver in the terminal.</li>
-          <li><strong>CTRL + K</strong>: paste a website into Microsoft Teams</a>.</li>
-          <li><strong>CTRL + ~</strong>: open the terminal in Zed.</li>
-          <li><strong>cd</strong>: change into a folder (use Tab to autocomplete names); use <code>cd ~</code> to go back out of all folders.</li>
-          <li><strong>CTRL + ,</strong>: open the settings page in the terminal.</li>
-          <li><strong>CTRL + Shift + Esc</strong>: open Task Manager to check CPU and RAM usage.</li>
-          <li><strong>code .</strong>: open the current folder in Visual Studio Code.</li>
-          <li><strong>Windows + V</strong>: open emoji and paste history.</li>
+          <li>Asset: Active instance of Healthshare.</li>
+          <ol>
+            <li>Assets cannot be easily copied</li>
+            <li>Assets are linked to the account.</li>
+            <li>Assets are NOT memberassets.</li>
+          </ol>
+          <li>Single moms need to either have their husband join their plan or there is a case for maternity.</li>
+          <li>The Rate Change changes all the product fields.</li>
+          <li>The total monthly contribution field should be the one source of truth in terms of member payment.</li>
+          <li>The payer is a separate field. Groups or children/adult children may have a contribution of 0.</li>
+          <li>Chargent charges the card.</li>
+          <ol>
+            <li>Chargent is the middleman between the processor and the gateway (NMI).</li>
+            <li>The worker's aid uses a DIFFERENT gateway.</li>
+          </ol>
+          <li>Standard, Complete, and Catastrophic are the primary plan types. Worker's Aid is a separate program to assist workers in the case of injury.</li>
         </ul>
       </section>
 
       <section class="card">
-        <h2>Salesforce Training</h2>
-        <!-- <ul>
-          <li>Company handbook</li>
-          <li>IT support and help desk contact</li>
-          <li>Team communication guide</li>
-          <li>Training schedule and calendar</li>
-        </ul> -->
-      </section>
-
-      <section class="card">
         <h2>AHS Process Overview</h2>
-        <!-- <p>
-          Add new training sections as you create them. Use headings for topics like policies, tools, and process maps. Replace
-          placeholder text with the exact details your new employees need.
-        </p> -->
-      </section>
-      <section class ="card">
-        <h2>Salesforce Trailhead Training</h2>
-        <p>This is the Salesforce Trailhead Link:</p>
-        <a href="https://trailhead.salesforce.com/users/pjkbm031xb60pq8l7m/trailmixes/salesforce-onboarding-ahs" target="_blank" rel="noopener noreferrer">
-          Visit Salesforce Trailhead
-        </a>
+        <p><strong>VERY IMPORTANT:</strong> Always remember Social-Security-Exempt, Pre-Existing Conditions, and Alternative Treatment.</p>
+        <ul>
+          <li>The goal is NOT to have people that are social security exempt. The older members of the company are more likely to be SSE.</li>
+          <li>There are multiple categories of leads in Salesforce, including new, follow up, holding, and ineligible.</li>
+          <li>A lead is created, then it becomes an opportunity, which becomes an account.</li>
+          <li>ALL INCOMING ACCOUNTS MUST BE CALLED BY THE SECRETARIES!!!!!!</li>
+          <li>We have set up some validation rules, which once confirmed, the lead can be converted to an opportunity.</li>
+          <li>The opportunity creates the account (you cannot go directly to the account).</li>
+            <ol>
+              <li>Ineligible or closed lost means you didn't join.</li>
+              <li>If you are confirmed, you become closed won.</li>
+              <li>A software flow will now create your account, your spouse and dependent accounts and all assets.</li>
+            </ol>
+            <li>To open a case, the member must call AHS. 
+              Through the phone, the secretaries will transfer to the billing team. 
+              AHS makes the case. The billing team will include the hospital, how long the member was there, if the condition was pre-existing, exc.
+            </li>
+            <li>As billing manager, Keny is assigned all cases.</li>
+            <li>Cases are linked to a person's asset so we can report on how much was lost in cases.</li>
+            <li>Reoccurring cases use the previous case as a parent case and are restarted every year.</li>
+            <li>Customers email their bills to the billing team, who then uploads them to Salesforce.</li>
+            <li>The original bill = no discount. The submitted bill = discount.</li>
+            <li>The "not shareable" field is used to track patients that do not have a shareable bill but we still negotiate for them
+              or there is a shared with hardship fund where the bill is paid anyway.
+            </li>
+            <li>The ISA is the bills that are recieved from the hospital. We are supposed to reimburse them for that? We remiburse the amount charged.</li>
+            <li>Opera Documents is the platform for generating welcome letters and billing documents.</li>
+            <li>Cases cannot be closed until the someone pays.</li>
+            <li>Keny, then Jackson, then Rosalyn are the defaults for starting a billing case.</li>
+            <li>All employees have a Teams phone extension.</li>
+            <li>The accountants use QuickBooks for billing. Salesforce and Quickbooks are not automatically integrated.</li>
+        </ul>
       </section>
     </main>
 

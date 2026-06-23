@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technology Setup</title>
+    <link rel="icon" href="images/ahs_3d logo-781x782.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1>Technology Setup</h1>
+        <p class="subtitle">
+          Essential technology tools and setup instructions for new employees.
+        </p>
+      </div>
+    </header>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <main class="container">
+      <section class="card">
+        <h2>IT Keyboard Shortcuts</h2>
+        <ul>
+          <li><strong>CTRL + L</strong>: clear all notes in nu.</li>
+          <li><strong>CTRL + C</strong>: stop or clear any running process.</li>
+          <li><strong>Q</strong>: quit when running quiver in the terminal.</li>
+          <li><strong>CTRL + K</strong>: paste a website into Microsoft Teams</a>.</li>
+          <li><strong>CTRL + ~</strong>: open the terminal in Zed.</li>
+          <li><strong>cd</strong>: change into a folder (use Tab to autocomplete names); use <code>cd ~</code> to go back out of all folders.</li>
+          <li><strong>CTRL + ,</strong>: open the settings page in the terminal.</li>
+          <li><strong>CTRL + Shift + Esc</strong>: open Task Manager to check CPU and RAM usage.</li>
+          <li><strong>code .</strong>: open the current folder in Visual Studio Code.</li>
+          <li><strong>Windows + V</strong>: open emoji and paste history.</li>
+        </ul>
+      </section>
+
+        <section class ="card">
+            <h2>Salesforce Trailhead Training</h2>
+            <p>Here is some Salesforce Training in a Trailmix format:</p>
+            <a href="https://trailhead.salesforce.com/users/pjkbm031xb60pq8l7m/trailmixes/salesforce-onboarding-ahs" target="_blank">
+                Visit Salesforce Trailhead
+            </a>
+      </section>
+
+      <section class="card">
+            <h2>Salesforce Use</h2>
+            <ul>
+                <li>In Salesforce, Setup->Sandbox is how you access the multiple sandboxes for testing code. 
+                    The sandbox has a deleted folder and can somewhat track what was done.</li>
+                <li>Salesforce Inspector Reloaded lets you write SOQL queries (just click data export).</li>
+                <li>Get the Salesforce extension for your browser to allow an easier Salesforce experience?</li>
+                <li>Setup-> Storage is the organization's storage.</li>
+                <li>JotForm was used to build the AHS application.</li>
+                <ol>
+                    <li>JotForm <strong>Immediately</strong> changes whatever is on the frontend when a change is made to the form.</li>
+                    <li>Ensure you have a JotForm account. Be careful when making changes!</li>
+                </ol>
+                <li>Every day, a daily asset activator checks if the start date is the next day. If so, status is sent to active.</li>
+                <li>Fifteen minutes later, the daily asset deactivator checks if any assets have deactivated, meaning they are set to inactive.</li>
+            </ul>
+      </section>
+
+      <section class="card">
+        <h2>Software Developer Setup</h2>
+        <ul>
+          <li>Install a Chatbot on your computer?</li>
+          <li>If on a Windows computer, install Windows Subsystem for Linux (WSL).</li>
+          <li>Install Ubuntu, Quiver, and Nu:</li>
+          <ul>
+            <li> Resources for Nu learning:
+                <a href="https://www.nushell.sh/commands/" target="_blank">Nu Commands</a>
+                and <a href="https://freepicheep.github.io/nu-salesforce/">Github Nu</a>
+            </li>
+            <li>Nu-client-tools with-spinner shows a cool spinner while loading followed by a checkmark when installed.</li>
+            <li>$ is how nu recognizes a variable ($today instead of today).</li>
+            <li>| is the pipeline operator which sends items from one pipeline into another. You can use it to select & put a space between the columns.</li>
+            <li>$"" with parenthesis around variable functions like an f-string.</li>
+            <li>A record in nu is the same as a dictionary in Python.</li>
+            <li>The reduce function outputs a record, not a list or table.</li>
+            <li>SOQL is the Salesforce Object Query Language.</li>
+            <li>--all queries everything. sf query sends a query to Salesforce and then returns the result.</li>
+            <li>It may be good to use the terminal to test the code without running the entire program. The following items are in the terminal:</li>
+            <ul>
+                <li>Use nu-salesforce loads the library* load-env-file pulls the nu file into objects</li>
+	            <li>$env.USERNAME loads the username</li>
+	            <li>Then use sf login to login to the salesforce system </li>
+	            <li>sf whoami: ensures you are in the sandbox</li>
+	            <li>nu-shell works great with json (open is the command to open the file)</li>
+            </ul>
+            <li>Gitignore files do not go on Github</li>
+            <li>def main is the main function.</li>
+            <li>You can use both Python and nu-shell in the same system.</li>
+            <li>let, const or any other immutable variables require a $.</li>
+            </ul>
+            <li>You can use Zed as an editor.</li>
+            <li>In order to install Quiver, use qv run nu and qv to ensure it is there.</li>
+            <li>Here is the Ubuntu terminal screen:
+                <a href="images/Ubuntu Terminal.png" target="_blank">Ubuntu Terminal</a>
+            </li>
+            <li>To open the config env file, use the config env(tab) and it will pop up a little screen.
+                <a href="images/nuconfig.png" target="_blank">Nu Config</a>
+            </li>
+            <li>If you are going to be using the terminal and Ubuntu, create a new external client app so that you can have your own key.</li>
+            <li>If you want to go to Zed, just type Zed once in the folder.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Updated by Laura Waldron, Developer, 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
