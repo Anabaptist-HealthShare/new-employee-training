@@ -32,6 +32,11 @@
           <li><strong>CTRL + Shift + Esc</strong>: open Task Manager to check CPU and RAM usage.</li>
           <li><strong>code .</strong>: open the current folder in Visual Studio Code.</li>
           <li><strong>Windows + V</strong>: open emoji and paste history.</li>
+          <li><strong>Windows + 1</strong>: open the terminal on Windows.</li>
+          <li><strong>CTRL + Shift + P</strong>: opens the command palette in Visual Studio Code 😊</li>
+          <li><strong>To login to salesforce</strong>: sf login web --instance-url https://login.salesforce.com</li>
+          <li><strong>To query something</strong>: sf data query  --query "SELECT Id, Name FROM Account LIMIT 10" --target-org <your-alias>   --result-format csv > account.csv</li>
+
         </ul>
       </section>
 
@@ -67,6 +72,11 @@
           <li>Install a Chatbot on your computer?</li>
           <li>If on a Windows computer, install Windows Subsystem for Linux (WSL).</li>
           <li>Install Ubuntu, Quiver, and Nu:</li>
+          <li>To open VSC using the terminal in nu, simply git clone the repository (or cd to the folder
+            if you already have it) then type 'code .' and enter.
+          </li>
+          <li>Use nu-salesforce and use nu-cli-tools with-spinner should be used at 
+            the beginning of a file to include the library and setup the with-spinner feature.</li>
           <ul>
             <li> Resources for Nu learning:
                 <a href="https://www.nushell.sh/commands/" target="_blank">Nu Commands</a>
@@ -88,6 +98,11 @@
 	            <li>sf whoami: ensures you are in the sandbox</li>
 	            <li>nu-shell works great with json (open is the command to open the file)</li>
             </ul>
+            <li>To run a file you must do the following:
+              load-env-file
+              sf login --username $env.USERNAME_SANDBOX_FULL --password $env.PASSWORD_SANDBOX_FULL --token $env.SECURITY_TOKEN_SANDBOX_FULL --domain test
+            </li>
+            <li>how to query in the sandbox: sf data query --query "SELECT Id, Product__c FROM Lead WHERE Status != 'Converted'" --target-org my-sandbox (if you are in the terminal)</li>
             <li>Gitignore files do not go on Github</li>
             <li>def main is the main function.</li>
             <li>You can use both Python and nu-shell in the same system.</li>
